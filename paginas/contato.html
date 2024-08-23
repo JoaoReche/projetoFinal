@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/contato.css">
+    <link rel="stylesheet" href="../estilos/layout.css">
+    <link rel="icon" href="../imagens/logoFavicon.ico">
+    <script src="../script/menuLayout.js"></script>
+    <script src="../script/formContato.js"></script>
+    <title>SCE Engenharia</title>
+</head>
+
+<body>
+    <header>
+        <section class="menuContainer">
+            <button type="button" class="btnNav" onclick="exibirMenu()">&#9776</button>
+            <nav>
+                <ul id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+        <a href="../index.html"><img src="../imagens/logoSCE.png" class="logo"></a>
+        <a href="contato.html" class="btnContato">Contato</a>
+    </header>
+    <main>
+        <section class="container">
+            <article class="contactArticle">
+                <h1>Solicite um orçamento</h1>
+                <p>Nossa equipe de profissionais está à disposição para te oferecer um suporte técnico e especializado!</p>
+                <section class="info">
+                    <section class="articleItem">
+                        <img src="../imagens/contato/iconLocal.png" class="icon">
+                        <p>Rua x, 000 - Centro - Sorocaba / SP</p>
+                    </section>
+                    <section class="articleItem">
+                        <img src="../imagens/contato/iconEmail.png" class="icon">
+                        <p>sceengenharia@contato.com.br</p>
+                    </section>
+                    <section class="articleItem">
+                        <img src="../imagens/contato/iconTel.png" class="icon">
+                        <p>(15) 00000-0000</p>
+                    </section>
+                </section>
+            </article>
+            <section class="formContainer">
+                <form action="#">
+                    <h1>Fale Conosco</h3>
+                    <fieldset class="divForm">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+                    </fieldset>
+                    <fieldset class="divForm">
+                        <input type="text" name="email" placeholder="E-mail" required>
+                        <input type="tel" name="tel" placeholder="Telefone" required>
+                    </fieldset>
+                    <!-- <fieldset class="divFormText"> -->
+                        <textarea rows="4" name="msg" placeholder="Digite sua mensagem" required></textarea>
+                    <!-- </fieldset> -->
+                    <button type="button" class="btnForm" onclick="enviarForm(this.form)">Enviar Mensagem »</button>
+                    <fieldset id="exibirForm">
+                        <legend>Informações</legend>
+                        <textarea id="exibirInfo" readonly></textarea>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+            </main>
+    <footer>
+        <p>SCE Engenharia &copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

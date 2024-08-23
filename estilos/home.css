@@ -1,0 +1,248 @@
+.tituloHome {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 1px solid #686464;
+}
+
+.sceEngenharia {
+    background-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.textContainerSceEngenharia {
+    padding: 24px;
+    max-width: 50%;
+}
+
+.textContainerSceEngenharia h1 {
+    font-size: 62px;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.textContainerSceEngenharia p {
+    font-size: 20px;
+    color: #bfbfbf;
+    margin-bottom: 25px;
+    max-width: 85%;
+    text-align: justify;
+}
+
+.sceEngenharia img {
+    width: 30%;
+    border-radius: 25px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.textContainerSobre {
+    padding: 24px;
+    max-width: 45%;
+}
+
+.textContainerSobre h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.textContainerSobre h1+p {
+    font-size: 20px;
+    max-width: 95%;
+    text-align: justify;
+}
+
+.assuntoSobre {
+    font-size: 18px;
+    color: rgb(36, 197, 36);
+}
+
+.assunto {
+    font-size: 18px;
+    color: rgb(36, 197, 36);
+    text-align: center;
+}
+
+.sobre img {
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 4em;
+}
+
+.posterContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.servicos {
+    padding: 30px;
+}
+
+.posterServicos {
+    display: inline-block;
+    width: 20%;
+    padding: 38px;
+    margin: 17px;
+    background-color: #d8e0e7;
+}
+
+.posterServicos h3 {
+    font-size: 26px;
+}
+
+.posterServicos p {
+    font-size: 18px;
+    text-align: justify;
+    color: #5a5858;
+}
+
+.posterServicos:hover {
+    border-top: 5px solid #FF7D32;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px #adadad;
+}
+
+.projetos {
+    padding: 20px;
+}
+
+.imgProjetos {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.projetosContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.imgContainer {
+    margin: 25px;
+}
+
+.imgContainer figcaption {
+    display: none;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.imgContainer:hover {
+    box-shadow: 0px 0px 15px 3px #8d8d8d;
+    border-radius: 10px;
+}
+
+.imgContainer:hover .imgProjetos {
+    border-radius: 10px 10px 0 0;
+}
+
+.imgContainer:hover figcaption {
+    display: block;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .sceEngenharia,
+    .sobre {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sceEngenharia img,
+    .sobre img {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .textContainerSceEngenharia,
+    .textContainerSobre {
+        max-width: 90%;
+    }
+
+    .textContainerSceEngenharia h1,
+    .textContainerSobre h1 {
+        font-size: 30px;
+    }
+
+    .textContainerSceEngenharia p,
+    .textContainerSobre h1+p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .assuntoSobre, .assunto {
+        font-size: 16px;
+    }
+
+    .tituloHome {
+        font-size: 30px;
+    }
+
+    .posterContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posterServicos {
+        width: 85%;
+        margin: 10px 0;
+    }
+
+    .posterServicos h3 {
+        font-size: 21px;
+    }
+    
+    .posterServicos p {
+        font-size: 16px;
+    }
+
+    .imgProjetos {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projetosContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        width: 90%;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .posterContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posterServicos {
+        width: 85%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,95 @@
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.textContainerSobre {
+    padding: 24px;
+    max-width: 45%;
+    margin-right: 30px;
+}
+
+.textContainerSobre h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.textContainerSobre p {
+    font-size: 20px;
+    max-width: 95%;
+    text-align: justify;
+}
+
+.assuntoSobre {
+    font-size: 18px;
+    color: rgb(36, 197, 36);
+}
+
+.sobre img {
+    width: 30%;
+    border-radius: 15px;
+    margin-left: 5.5em;
+}
+
+.subtitles {
+    font-size: 22px;
+    color: gray;
+}
+
+@media (max-width: 767px) {
+    .sobre {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .textContainerSobre {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .textContainerSobre h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin: 0;
+    }
+
+    .textContainerSobre p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .sobre img {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .subtitles {
+        font-size: 16px;
+    }
+
+    .subtitlesContent {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sobre {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .textContainerSobre {
+        max-width: 90%;
+        margin: 0;
+    }
+
+    .sobre img {
+        width: 40%;
+        margin-left: 0;
+    }
+}

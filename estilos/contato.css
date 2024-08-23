@@ -1,0 +1,283 @@
+form {
+    background-color: #d8e0e7;
+    padding: 15px;
+    margin: 40px;
+    text-align: center;
+}
+
+.divForm {
+    border: none;
+    padding: 8px;
+    text-align: center;
+}
+
+.divFormText {
+    border: none;
+}
+
+input {
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    width: 45%;
+    background-color: #fff;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    padding: 22px;
+    width: 90.5%;
+    height: 80px;
+    margin: 10px;
+}
+
+form h1 {
+    font-size: 35px;
+    margin: 13px;
+    text-align: start;
+}
+
+.btnForm {
+    background-color: #FF7D32;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    margin: 10px;
+}
+
+.btnForm:hover {
+    background-color: #e56b21;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#exibirForm {
+    display: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+}
+
+.contactArticle, .formContainer {
+    width: 48%;
+}
+
+.contactArticle {
+    background-color: #fff;
+    max-width: 460px;
+    padding: 30px;
+}
+
+.contactArticle h1 {
+    font-size: 35px;
+}
+
+.contactArticle p {
+    font-size: 21px;
+    color: #5a5858;
+}
+
+.formContainer {
+    background-color: #fff;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.articleItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.articleItem p {
+    font-size: 22px;
+    color: #5a5858;
+}
+
+@media (max-width: 767px) {
+    form {
+        padding: 8px;
+        margin: 0;
+    }
+    
+    input {
+        font-size: 14px;
+        width: 90%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    textarea {
+        font-size: 14px;
+        width: 79%;
+    }
+    
+    form h1 {
+        font-size: 32px;
+        margin: 8px;
+        text-align: start;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .contactArticle {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .formContainer {
+        width: 100%;
+    }
+
+    .contactArticle h1 {
+        font-size: 30px;
+    }
+
+    .contactArticle p, .articleItem p {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 28px;
+    }
+
+    .articleItem p {
+        margin-left: 0;
+    }
+
+    .formContainer {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .btnForm {
+        width: 94%;
+        font-size: 14px;
+    }
+
+    #exibirForm {
+        font-size: 18px;
+    }
+
+    #exibirInfo {
+        width: 85%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    form {
+        padding: 8px;
+        margin: 0;
+    }
+    
+    input {
+        font-size: 14px;
+        padding: 15px;
+        margin: 0;
+        width: 45%;
+    }
+
+    form h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .contactArticle {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .formContainer {
+        width: 100%;
+    }
+
+    .contactArticle h1 {
+        font-size: 30px;
+    }
+
+    .contactArticle p, .articleItem p {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 28px;
+    }
+
+    .articleItem p {
+        margin-left: 0;
+    }
+
+    .formContainer {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .btnForm {
+        font-size: 14px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #exibirForm {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1750px) {
+    form h1, .contactArticle h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    .contactArticle p {
+        font-size: 18px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    input {
+        margin: 5px;
+        margin-left: -8px;
+        width: 95%;
+    }
+
+    textarea {
+        margin-left: 0;
+        width: 88.5%;
+    }
+}
